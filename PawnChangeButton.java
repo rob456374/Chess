@@ -8,7 +8,7 @@ public class PawnChangeButton extends JButton {
         super(text);
         addActionListener(e -> {
             if (text.equals("Queen")) {
-                Queen figure1 = new Queen(pointX, pointY, activeColor, game, activeColor == Color.WHITE ? blackFigures : whiteFigures);
+                Queen figure1 = new Queen(pointX, pointY, activeColor, game, activeColor == Color.WHITE ? whiteFigures : blackFigures);
                 game.add(figure1, Integer.valueOf(3));
                 if (activeColor == Color.WHITE) {
                     whiteFigures.figures.add(figure1);
@@ -16,7 +16,7 @@ public class PawnChangeButton extends JButton {
                     blackFigures.figures.add(figure1);
                 }
             } else if (text.equals("Rook")) {
-                Rock figure2 = new Rock(pointX, pointY, activeColor, game, activeColor == Color.WHITE ? blackFigures : whiteFigures);
+                Rock figure2 = new Rock(pointX, pointY, activeColor, game, activeColor == Color.WHITE ? whiteFigures : blackFigures);
                 game.add(figure2, Integer.valueOf(3));
                 if (activeColor == Color.WHITE) {
                     whiteFigures.figures.add(figure2);
@@ -24,7 +24,7 @@ public class PawnChangeButton extends JButton {
                     blackFigures.figures.add(figure2);
                 }
             } else if (text.equals("Bishop")) {
-                Bishop figure3 = new Bishop(pointX, pointY, activeColor, game, activeColor == Color.WHITE ? blackFigures : whiteFigures);
+                Bishop figure3 = new Bishop(pointX, pointY, activeColor, game, activeColor == Color.WHITE ? whiteFigures : blackFigures);
                 game.add(figure3, Integer.valueOf(3));
                 if (activeColor == Color.WHITE) {
                     whiteFigures.figures.add(figure3);
@@ -32,7 +32,7 @@ public class PawnChangeButton extends JButton {
                     blackFigures.figures.add(figure3);
                 }
             } else if (text.equals("Knight")) {
-                Knight figure4 = new Knight(pointX, pointY, activeColor, game, activeColor == Color.WHITE ? blackFigures : whiteFigures);
+                Knight figure4 = new Knight(pointX, pointY, activeColor, game, activeColor == Color.WHITE ? whiteFigures : blackFigures);
                 game.add(figure4, Integer.valueOf(3));
                 if (activeColor == Color.WHITE) {
                     whiteFigures.figures.add(figure4);

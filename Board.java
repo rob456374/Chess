@@ -47,7 +47,6 @@ public class Board extends JPanel implements EventListener{
     private Color activeColor = Color.WHITE;
 
     public void eventAction(int pointX, int pointY){
-        System.out.println("Klick: " + pointX + ", " + pointY);
         if (eventStateString == null) {
             if (activeColor == Color.BLACK) {
                 for (int i = 0; i < blackFigures.figures.size(); i++) {
